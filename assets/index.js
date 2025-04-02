@@ -1,4 +1,3 @@
-
 var selector = document.querySelector(".selector_box");
 selector.addEventListener('click', () => {
     if (selector.classList.contains("selector_open")){
@@ -128,6 +127,14 @@ document.querySelector(".go").addEventListener('click', () => {
         forwardToId(params);
     }
 
+});
+
+document.querySelector('.go').addEventListener('click', function () {
+    // Validate form inputs if necessary
+    // Example: if (!validateForm()) return;
+
+    // Navigate to the next page
+    window.location.href = 'id.html';
 });
 
 function isEmpty(value){
